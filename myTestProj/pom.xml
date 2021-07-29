@@ -8,7 +8,7 @@
 	<name>myTestProj Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<!-- Sonar test -->
+		<!-- Sonar test 1212 -->
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.jacoco.itReportPath>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.itReportPath>
