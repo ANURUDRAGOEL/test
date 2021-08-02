@@ -29,7 +29,7 @@ public class MyTestServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		 String jsonStr = org.json.simple.JSONArray.toJSONString(MyService.getAddress());
-		
+		System.out.println("Testing");
 		response.getOutputStream().print(jsonStr);
 	}
 
