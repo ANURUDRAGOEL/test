@@ -25,5 +25,10 @@ steps:
     PathtoPublish: '$(Build.SourcesDirectory)/myTestProj/target/myTestProj-0.0.2-SNAPSHOT.war'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-
-    
+- 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)/myTestProj/target/myTestProj-0.0.2-SNAPSHOT.war'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '\\NOIDA-TZ-DCDMS\ConversionTeamSharedFolder'
