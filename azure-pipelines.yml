@@ -25,4 +25,3 @@ steps:
     PathtoPublish: '$(Build.SourcesDirectory)/myTestProj/target/myTestProj-0.0.2-SNAPSHOT.war'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-- 
