@@ -32,3 +32,10 @@ steps:
     AdminUserName: 'anurudra.goel@coforgetech.com'
     AdminPassword: 'Shivani@2012'
     TargetPath: 'E:\test'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo Hello world
+      dir
