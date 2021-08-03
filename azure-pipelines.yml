@@ -20,11 +20,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/myTestProj/target/myTestProj-0.0.2-SNAPSHOT.war'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
 - task: CmdLine@2
   inputs:
     script: |
@@ -36,3 +31,8 @@ steps:
   inputs:
     filePath: '$(Build.SourcesDirectory)/test.ps1'
     arguments: '$(Build.SourcesDirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory/logs.zip'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
