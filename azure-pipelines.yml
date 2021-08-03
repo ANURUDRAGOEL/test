@@ -43,5 +43,5 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Free Trial(d04d8db4-6ff6-4f03-bf38-98a64ea60a27)'
     appType: 'webApp'
-    WebAppName: 'Free Trial'
+    WebAppName: 'myTestProj-0.0.2-SNAPSHOT'
     packageForLinux: '$(Build.SourcesDirectory)/myTestProj/target/myTestProj-0.0.2-SNAPSHOT.war'
