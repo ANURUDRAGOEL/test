@@ -31,3 +31,6 @@ steps:
       echo Write your commands here
       
       echo Hello world
+- task: PowerShell@2
+  inputs:
+    filePath: '$(Build.SourcesDirectory)/test.ps1'
