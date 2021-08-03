@@ -25,13 +25,6 @@ steps:
     PathtoPublish: '$(Build.SourcesDirectory)/myTestProj/target/myTestProj-0.0.2-SNAPSHOT.war'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-- task: WindowsMachineFileCopy@2
-  inputs:
-    SourcePath: '$(Build.SourcesDirectory)/myTestProj/target/myTestProj-0.0.2-SNAPSHOT.war'
-    MachineNames: '172.18.51.167'
-    AdminUserName: 'anurudra.goel@coforgetech.com'
-    AdminPassword: 'Shivani@2012'
-    TargetPath: 'E:\test'
 - task: CmdLine@2
   inputs:
     script: |
