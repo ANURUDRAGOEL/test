@@ -33,6 +33,6 @@ steps:
     arguments: '$(Build.SourcesDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory/logs.zip'
+    PathtoPublish: '/logs.zip'
     ArtifactName: 'drop'
     publishLocation: 'Container'
