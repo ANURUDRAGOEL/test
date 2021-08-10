@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<package>
+	<metadata>
+		<id>Policy</id>
+		<version>1.0.0.0</version>
+		<authors>Coforge</authors>
+		<owners>Bear River Mutual Insurance</owners>
+		<description>Duck Creek Policy</description>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<copyright>Copyright 2019 © BRMI Insurance</copyright>
+	</metadata>
+	<files>
+		<file src="**\PolicyBuildVersion.txt"										target="..\"/>
+	</files>
+</package>
+
