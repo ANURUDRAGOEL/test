@@ -75,4 +75,9 @@ steps:
     packagesToPack: '**/*.nuspec'
     configuration: 
     versioningScheme: 'off'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.artifactStagingDirectory)'
+    ArtifactName: 'nuspec'
+    publishLocation: 'Container'
     
