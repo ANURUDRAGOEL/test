@@ -11,6 +11,7 @@ pool:
 variables:
   majorMinorVersion: 1.0
   semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
+  PackageVersion : $(Build.BuildNumber)
 steps:
 - script: echo '$(Build.BuildNumber)'
 - task: PowerShell@2
