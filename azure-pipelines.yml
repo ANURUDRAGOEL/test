@@ -69,4 +69,10 @@ steps:
   inputs:
     versionSpec: 
     checkLatest: true
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/*.nuspec'
+    configuration: 
+    versioningScheme: 'off'
     
