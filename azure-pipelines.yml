@@ -13,6 +13,18 @@ variables:
   semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
 steps:
 - script: echo '$(Build.BuildNumber)'
+- task: PowerShell@2
+  env:
+    BP: $(Build.ArtifactStagingDirectory)
+  inputs:
+    targetType: 'inline'
+    script: | 
+       $BaseVersionNo = "Policy Base Version No. : 7.1.0.2430 ~"
+       $versionNo = "Policy Customization Version No. : $(build.buildNumber)"
+       echo $versionNo
+       echo $(Build.ArtifactStagingDirectory)
+       Set-Content -Path $(Build.Repository.LocalPath)/PolicyBuildVersion.txt -Value $BaseVersionNo, $versionNo
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'myTestProj/pom.xml'
