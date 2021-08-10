@@ -14,8 +14,8 @@ variables:
 steps:
 - script: echo '$(Build.BuildNumber)'
 - task: PowerShell@2
-  env:
-    BP: $(Build.ArtifactStagingDirectory)
+  #env:
+   # BP: $(Build.ArtifactStagingDirectory)
   inputs:
     targetType: 'inline'
     script: | 
