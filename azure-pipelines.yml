@@ -75,6 +75,7 @@ steps:
     packagesToPack: '**/*.nuspec'
     configuration: 
     versioningScheme: byEnvVar
+    versionEnvVar: PackageVersion
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.artifactStagingDirectory)'
